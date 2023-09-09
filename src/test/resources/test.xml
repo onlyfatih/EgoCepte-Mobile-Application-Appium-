@@ -1,0 +1,23 @@
+<!-- Bu satır, TestNG yapılandırma dosyasının tipini ve belge türünü belirler. -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- Bu satır, bir TestNG test suite'unu başlatır. 'name' özelliğiyle suite'un adı belirtilir. 'verbose' özelliği loglama seviyesini belirtir. -->
+<suite name="test" verbose="1">
+
+    <listeners>
+        <listener class-name="testRunners.Listener"/>
+    </listeners>
+
+    <!-- Bu satır, test parametrelerini belirlemek için kullanılır. 'name' özelliğiyle parametrenin adı, 'value' özelliğiyle değeri belirtilir. -->
+    <parameter name="appium" value="Android"/>
+    <!-- Bu satır, TestNG test tanımını başlatır. 'name' özelliğiyle testin adı belirtilir. -->
+    <test name="AppiumProject">
+
+        <!-- Bu bölüm, testin içerdiği sınıfları belirler. '<class>' etiketi içinde sınıfın adı belirtilir. -->
+        <classes>
+            <class name="testRunners.runner"/>
+        </classes>
+    </test>
+
+    <!-- Bu satır, TestNG test tanımının sonunu ve test suite'unun sonunu belirtir. -->
+</suite>
