@@ -1,12 +1,12 @@
 package util;
 
-import java.io.FileInputStream;     // Dosya okuma işlemleri için gerekli kütüphane.
-import java.io.FileNotFoundException;  // Dosyanın bulunamaması durumunda fırlatılacak istisnayı temsil eden kütüphane.
-import java.io.IOException;          // Dosya okuma işlemlerinde oluşan hataları temsil eden kütüphane.
-import java.io.InputStream;          // Dosya içeriğini okumak için kullanılacak giriş akışı kütüphanesi.
-import java.nio.file.Files;          // Dosya ve dizin işlemleri için kullanılan kütüphane.
-import java.nio.file.Paths;          // Dosya ve dizin yollarını temsil eden kütüphane.
-import java.util.Properties;         // Ayarları saklamak ve yönetmek için kullanılan kütüphane.
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Properties;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -14,11 +14,10 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import static java.lang.System.getProperties;
-
 public class ConfigReader {
     private static Properties properties;  // Ayarları saklamak için özellikler değişkeni.
 
+    // Properties dosyasını yükler ve ayarları döndürür.
     public static Properties initialize_Properties() throws RuntimeException {
         properties = new Properties();  // Yeni bir Properties nesnesi oluşturulur.
         try {
@@ -37,4 +36,3 @@ public class ConfigReader {
         return properties;
     }
 }
-

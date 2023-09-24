@@ -5,7 +5,7 @@
 <suite name="test" verbose="1">
 
     <listeners>
-        <listener class-name="testRunners.Listener"/>
+        <listener class-name="Listener.Listener"/>
     </listeners>
 
     <!-- Bu satır, test parametrelerini belirlemek için kullanılır. 'name' özelliğiyle parametrenin adı, 'value' özelliğiyle değeri belirtilir. -->
@@ -15,7 +15,7 @@
 
         <!-- Bu bölüm, testin içerdiği sınıfları belirler. '<class>' etiketi içinde sınıfın adı belirtilir. -->
         <classes>
-            <class name="testRunners.runner"/>
+            <class name="testRunners.Runner"/>
         </classes>
     </test>
 

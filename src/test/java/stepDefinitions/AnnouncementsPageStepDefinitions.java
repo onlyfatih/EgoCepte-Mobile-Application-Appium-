@@ -1,9 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Then;
-import org.testng.annotations.Listeners;
 import pages.AnnouncementsPage;
-import testRunners.Listener;
 import util.DriverFactory;
 
 public class AnnouncementsPageStepDefinitions {

@@ -1,12 +1,7 @@
 package testRunners;
 
-import com.aventstack.extentreports.testng.listener.ExtentIReporterSuiteClassListenerAdapter;
-import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 
 @CucumberOptions(
         features = {"src/test/java/features"}, // Test senaryolarının (feature dosyalarının) yolunu belirtir.
@@ -19,9 +14,9 @@ import org.testng.annotations.Listeners;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         }
 )
-//@Listeners({ExtentITestListenerClassAdapter.class})
-public class runner extends AbstractTestNGCucumberTests {
-    // AbstractTestNGCucumberTests sınıfını genişleterek Cucumber testlerini TestNG ile çalıştırmamızı sağlar.
+
+public class Runner extends AbstractTestNGCucumberTests {
+        // AbstractTestNGCucumberTests sınıfını genişleterek Cucumber testlerini TestNG ile çalıştırmamızı sağlar.
+
+        // Eğer ekstra işlemler veya ayarlar yapmanız gerekiyorsa burada yapabilirsiniz.
 }
-
-
