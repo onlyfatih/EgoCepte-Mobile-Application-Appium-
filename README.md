@@ -1,6 +1,6 @@
 # EgoCepte-Mobile-Application-Appium-ExtentReport
 
-This project is developed to perform automation tests for the Beymen Mobile Application using a Java and Selenium-based Appium test framework.
+This project was developed to perform automation tests of the EgoCepte Mobile Application using the Java and Selenium-based Appium testing framework. The tests are simple and have been developed to highlight the features of the "Extent Report" reporting tool.
 
 <p align="center">
   <img src="https://www.ego.gov.tr/resim/normal/26495.jpg" alt="Project Logo" width="300" />
